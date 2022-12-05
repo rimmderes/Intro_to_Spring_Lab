@@ -29,10 +29,10 @@ public class GreetingController {
 
     // http://localhost:8080/greeting?name=Rimm
 
-//    @GetMapping
-//    public String timeOfDay(@RequestParam(value = "timeOfDay") String timeofDay) {
-//        return "Good " + timeofDay;
-//    }
+    @GetMapping
+    public String timeOfDay(@RequestParam(value = "timeOfDay") String timeofDay) {
+        return "Good " + timeofDay;
+    }
 
     @GetMapping(value = "/christmas")
         public ResponseEntity<Celebration> getCelebration () {
